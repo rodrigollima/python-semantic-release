@@ -270,7 +270,7 @@ def push_new_version(
         )
         
         #repo.git.push(server)
-        repo.git.push("https://rodrigollima:fdsafasdfdsa@github.com/Samplemed/sample360-core.git", "python-semantic-release")
+        repo.git.push("https://rodrigollima:fdsafasdfdsa@github.com/Samplemed/sample360-core.git", "fix-python-release")
         repo.git.push("--tags", server)
     except GitCommandError as error:
         message = str(error)
