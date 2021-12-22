@@ -248,6 +248,7 @@ def push_new_version(
             token = "gitlab-ci-token:" + token
         actor = os.environ.get("GITHUB_ACTOR")
         if actor:
+            token = os.environ['ADMIN_SECRET']
             server = f"https://{actor}:{token}@{domain}/{owner}/{name}.git"
         else:
             server = f"https://{token}@{domain}/{owner}/{name}.git"
@@ -269,13 +270,10 @@ def push_new_version(
             f"Server: {token}"
         )
         
-        logger.warning(
-            f"OS:  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"
-        )
+   
         
-        #repo.git.push(server)
-        repo.git.push("https://rodrigollima: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@github.com/Samplemed/sample360-core.git", "fix-python-release")
-        repo.git.push("--tags", server)
+        repo.git.push(server, banch)
+        repo.git.push("--tags", server, banch)
     except GitCommandError as error:
         message = str(error)
         if auth_token:
