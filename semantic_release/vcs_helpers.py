@@ -261,10 +261,7 @@ def push_new_version(
         logger.warning(
             f"Brach: {branch}"
         )
-        
-        logger.warning(
-            f"Actor: {actor}"
-        )
+ 
         
         logger.warning(
             f"Server: {token}"
