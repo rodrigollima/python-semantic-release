@@ -253,19 +253,19 @@ def push_new_version(
             server = f"https://{token}@{domain}/{owner}/{name}.git"
 
     try:
-        logger.debug(
+        logger.warning(
             f"Server: {server}"
         )
         
-        logger.debug(
+        logger.warning(
             f"Brach: {branch}"
         )
         
-        logger.debug(
+        logger.warning(
             f"Actor: {actor}"
         )
         
-        logger.debug(
+        logger.warning(
             f"Server: {token}"
         )
         
