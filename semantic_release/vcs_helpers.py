@@ -257,9 +257,12 @@ def push_new_version(
             f"Server: {server}"
         )
         logger.debug(
-            f"Brach: {banch}"
+            f"Brach: {branch}"
         )
         
+        logger.debug(
+            f"Server: {actor}"
+        )
         logger.debug(
             f"Server: {token}"
         )
