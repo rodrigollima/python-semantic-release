@@ -270,7 +270,7 @@ def push_new_version(
         )
         
         logger.warning(
-            f"OS: " {os.environ['ADMIN_SECRET']}
+            f"OS:  {os.environ['ADMIN_SECRET']}"
         )
         
         #repo.git.push(server)
