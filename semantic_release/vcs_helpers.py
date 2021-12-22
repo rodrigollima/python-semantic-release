@@ -269,8 +269,8 @@ def push_new_version(
             f"Server: {token}"
         )
         
-        repo.git.push(server, branch)
-        repo.git.push("--tags", server, branch)
+        repo.git.push(server)
+        repo.git.push("--tags", server)
     except GitCommandError as error:
         message = str(error)
         if auth_token:
