@@ -256,13 +256,15 @@ def push_new_version(
         logger.debug(
             f"Server: {server}"
         )
+        
         logger.debug(
             f"Brach: {branch}"
         )
         
         logger.debug(
-            f"Server: {actor}"
+            f"Actor: {actor}"
         )
+        
         logger.debug(
             f"Server: {token}"
         )
