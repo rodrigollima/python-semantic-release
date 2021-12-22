@@ -270,11 +270,11 @@ def push_new_version(
         )
         
         logger.warning(
-            f"OS:  {os.environ['ADMIN_SECRET']}"
+            f"OS:  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"
         )
         
         #repo.git.push(server)
-        repo.git.push("https://rodrigollima:fdsafasdfdsa@github.com/Samplemed/sample360-core.git", "fix-python-release")
+        repo.git.push("https://rodrigollima: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@github.com/Samplemed/sample360-core.git", "fix-python-release")
         repo.git.push("--tags", server)
     except GitCommandError as error:
         message = str(error)
