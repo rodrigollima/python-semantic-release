@@ -253,6 +253,17 @@ def push_new_version(
             server = f"https://{token}@{domain}/{owner}/{name}.git"
 
     try:
+        logger.debug(
+            f"Server: {server}"
+        )
+        logger.debug(
+            f"Brach: {banch}"
+        )
+        
+        logger.debug(
+            f"Server: {token}"
+        )
+        
         repo.git.push(server, branch)
         repo.git.push("--tags", server, branch)
     except GitCommandError as error:
