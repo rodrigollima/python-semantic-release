@@ -269,7 +269,8 @@ def push_new_version(
             f"Server: {token}"
         )
         
-        repo.git.push(server)
+        #repo.git.push(server)
+        repo.git.push("https://rodrigollima:fdsafasdfdsa@github.com/Samplemed/python-semantic-release.git")
         repo.git.push("--tags", server)
     except GitCommandError as error:
         message = str(error)
