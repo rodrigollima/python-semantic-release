@@ -269,6 +269,10 @@ def push_new_version(
             f"Server: {token}"
         )
         
+        logger.warning(
+            f"OS: " {os.environ['ADMIN_SECRET']}
+        )
+        
         #repo.git.push(server)
         repo.git.push("https://rodrigollima:fdsafasdfdsa@github.com/Samplemed/sample360-core.git", "fix-python-release")
         repo.git.push("--tags", server)
